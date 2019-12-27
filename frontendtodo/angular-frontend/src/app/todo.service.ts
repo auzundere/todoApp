@@ -9,7 +9,7 @@ export class TodoService {
   constructor(private http: HttpClient) { }
 
   getTodos(): Promise<Todo[]> {
-    return this.http.get(this.baseUrl + "/api/todos/")
+    return this.http.get(this.baseUrl + "/api/todos")
       .toPromise()
       .then(response => response as Todo[])
       .catch(this.handleError);
