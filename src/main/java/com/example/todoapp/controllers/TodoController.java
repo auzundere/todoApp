@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin("*")
+@CrossOrigin("http://profile-analyzer.herokuapp.com/")
 public class TodoController {
 
     @Autowired
